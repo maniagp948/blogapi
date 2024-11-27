@@ -15,7 +15,7 @@ class CustomUserAdmin(UserAdmin):
         "name",
         "is_staff",
     ]
-    fieldsets = UserAdmin.fieldsets + ((None, {"fields": ("name",)}),)
+    fieldsets = UserAdmin.fieldsets + ((None, {"fields": ("name",)}),)  # type: ignore
     add_fieldsets = UserAdmin.add_fieldsets + ((None, {"fields": ("name",)}),)
 
 
